@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Lato&family=Montserrat&family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .btn-remainder {
+    @apply px-2 p-1 text-sm lg:text-base
+  }
+
+  .options-btn {
+    @apply absolute flex-col top-full z-50 bg-white rounded-md w-full px-4 gap-1 border
+  }
+
+  .btn-back {
+    @apply mt-2 px-2 select-none w-24 flex flex-row justify-evenly items-center py-1
+  }
+
+  .login-link {
+    @apply select-none text-center mt-2 sm:mt-4 tracking-wider text-sm sm:text-base font-bold text-gray-500 hover:text-red-800 cursor-pointer
+  }
+
+  .td-none {
+    @apply w-full p-2 bg-blue-500 text-white text-center border border-white
+  }
+
+  #live td {
+    @apply border-red-400 focus:bg-cyan-200 border text-sm lg:text-base font-lato
+  }
+
+  #live th {
+    @apply border-2 bg-blue-200 border-red-400 text-sm lg:text-base font-lato
+  }
+
+  h4 {
+    @apply text-base sm:text-lg lg:text-xl font-bold py-2 tracking-widest uppercase text-center
+  }
+
+  h1 {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .btn-tabs {
+    @apply text-xs lg:text-sm w-1/5 px-2 py-2 uppercase font-bold bg-white text-black flex-1
+  }
+
+  .btn-active {
+    @apply bg-black text-white flex-1;
+  }
+
+
+
+  .view-url {
+    @apply px-4 py-2 grow flex flex-col bg-white overflow-auto
+  }
+
+  .tr-list {
+    @apply text-center text-sm lg:text-lg bg-gray-500 text-white
+  }
+
+  .view-url-parent {
+    @apply w-full h-full flex flex-col sm:flex-row select-none
+  }
+
+  .reset-btn {
+    @apply relative mt-4 w-full tracking-wider text-white font-bold py-2 px-4 rounded
+  }
+
+  .form-input {
+    @apply shadow appearance-none border rounded py-2 px-2 text-gray-700 w-full focus:bg-cyan-300
+  }
+
+  .login-input {
+    @apply shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none w-full
+  }
+
+  .login-icon {
+    @apply shadow appearance-none text-xl border py-2 px-3 rounded
+  }
+
+
+
+  .file-inputs {
+    @apply appearance-none px-1 h-8 text-gray-700 w-1/2 sm:w-2/3 focus:bg-cyan-300
+  }
+
+  .file-label {
+    @apply shadow appearance-none text-base lg:text-lg border h-8 px-1 w-1/2 sm:w-1/3 bg-gray-300 rounded flex items-center
+  }
+
+  .email-inputs {
+    @apply shadow appearance-none border px-1 h-8 text-gray-700 focus:bg-cyan-300
+  }
+
+  .email-label {
+    @apply shadow appearance-none text-lg border h-8 px-1 bg-gray-300 rounded flex items-center
+  }
+
+  .email-label {
+    @apply shadow appearance-none text-lg border h-10 px-1 w-full bg-gray-300 rounded flex items-center
+  }
+
+  .file-upload {
+    @apply rounded px-1 h-8 text-blue-700 w-1/2 sm:w-2/3 focus:bg-cyan-300
+  }
+
+
+
+  .kfi-input {
+    @apply shadow appearance-none border rounded px-1 h-10 w-1/5 text-gray-700 focus:bg-cyan-300 text-right
+  }
+
+  .kfi-label {
+    @apply shadow appearance-none text-lg border h-10 px-1 bg-gray-300 rounded w-1/5 flex items-center
+  }
+
+  .form-textarea {
+    @apply shadow appearance-none border rounded px-1 h-32 text-gray-700 w-full focus:bg-cyan-300 overflow-y-auto
+  }
+
+  .project-inputs {
+    @apply shadow appearance-none border rounded px-1 py-1 text-sm h-8 text-gray-700 w-1/2 focus:bg-cyan-300
+  }
+
+  .project-label {
+    @apply shadow appearance-none text-xs sm:text-sm border h-8 px-1 py-2 w-1/2 bg-gray-300 rounded flex items-center relative
+  }
+
+  .other-label {
+    @apply shadow appearance-none text-xs sm:text-sm border h-8 px-1 py-2 w-full sm:w-1/2 mt-2 sm:mt-0 bg-gray-300 rounded flex items-center relative
+  }
+
+  .other-inputs {
+    @apply shadow appearance-none border rounded px-1 py-1 text-sm h-8 text-gray-700 mt-2 sm:mt-0 w-full sm:w-1/2 focus:bg-cyan-300
+  }
+
+  .icon {
+    @apply shadow appearance-none text-xl border py-2 px-3 rounded
+  }
+
+  .reset-form {
+    @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4
+  }
+
+  .lock-icon {
+    @apply w-full lock text-center
+  }
+
+  .password-icon {
+    @apply absolute right-3 top-2 text-xl cursor-pointer
+  }
+
+  .search-icon {
+    @apply absolute right-3 top-2 text-xl
+  }
+
+  .relative-icon {
+    @apply shadow appearance-none text-lg border py-2 px-2 w-6 bg-blue-100 rounded
+  }
+
+  .form-label {
+    @apply shadow appearance-none text-sm md:text-base lg:text-lg border py-0.5 px-2 bg-gray-300 rounded flex items-center tracking-wider
+  }
+
+  .form-inputs {
+    @apply shadow appearance-none border py-0.5 text-gray-700 focus:bg-cyan-300 text-right text-sm md:text-base lg:text-lg
+  }
+
+  .info-inputs {
+    @apply shadow appearance-none border p-1 text-gray-700 focus:bg-cyan-300 text-sm md:text-base lg:text-lg
+  }
+
+  .house-inputs {
+    @apply shadow appearance-none border text-gray-700 focus:bg-cyan-300 text-right text-sm md:text-base lg:text-lg
+  }
+
+  .house-label {
+    @apply shadow appearance-none text-sm md:text-base lg:text-lg border px-2 bg-gray-300 rounded flex items-center tracking-wider
+  }
+
+  .income-values {
+    @apply text-sm md:text-base lg:text-lg font-light border border-indigo-400 rounded-md px-4 py-0.5 text-right bg-white
+  }
+
+  .income-head {
+    @apply text-sm md:text-base lg:text-lg font-bold border border-indigo-400 rounded-md px-4 py-0.5 underline relative
+  }
+
+  .profile-label {
+    @apply shadow appearance-none border p-1 w-1/2 sm:w-1/3 bg-gray-300 rounded flex items-center
+  }
+
+  .profile-inputs {
+    @apply shadow appearance-none border rounded p-1 text-gray-700 w-1/2 sm:w-2/3 focus:bg-cyan-300
+  }
+
+  .kmp-label {
+    @apply shadow appearance-none text-lg border px-1 w-1/2 sm:w-1/3 bg-gray-300 rounded flex items-center
+  }
+
+  .input-group {
+    @apply sm:mt-2 mt-1 flex flex-row w-full justify-evenly
+  }
+
+  .error-message {
+    @apply text-red-900 font-bold italic block text-sm lg:text-base mt-1 w-full
+  }
+
+  .pwd-rules {
+    @apply mt-4 flex flex-col w-full relative
+  }
+
+  .pwd-rules span:first-child {
+    @apply text-base lg:text-lg font-extrabold tracking-wider text-red-900
+  }
+
+  .pwd-rules span:not(:first-child) {
+    @apply text-sm lg:text-base font-bold tracking-wider text-red-900
+  }
+
+  .login-text {
+    @apply text-center mt-4 tracking-wider text-base font-bold text-gray-500 cursor-pointer
+  }
+
+  .reset-header {
+    @apply text-center text-xl font-bold py-3
+  }
+
+
+}
+
+
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Lato', sans-serif;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+}
+
+
+#root {
+
+  width: 100vw !important;
+  height: 100vh !important;
+  padding: 0px !important;
+  max-width: none !important;
+  text-align: left;
+  display: flex !important;
+  margin: 0 !important
+}
+
+#salary {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#salary div:nth-child(1) {
+  max-width: 1000px;
+
+}
+
+.opacity {
+  animation: show 0.3s linear;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.gradient {
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+.btn-grad,
+.btn-save {
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 8px 16px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  letter-spacing: .05em;
+  margin-top: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.box-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#main {
+  max-width: 600px;
+}
+
+#heads {
+  grid-template-columns: repeat(auto-fill, 150px);
+}
+
+
+.tooltip-enabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.tooltip-disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.tooltip-disabled,
+.tooltip-enabled {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  transform: translateX(-25%);
+  width: 70%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  z-index: 60;
+}
+
+.income-head:hover .tooltip-enabled {
+  display: block;
+}
+
+.income-head:hover .tooltip-disabled {
+  display: block;
+}

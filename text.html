@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+const data = {
+    gross1:100,
+    net1:80,
+    gross2:120,
+    net2:90
+}
+
+const filter = Object.entries(data).filter(([key,value])=>{
+    if(key.includes("net")){
+        return value
+    }
+}).reduce((a,[,b])=>a+b,0)
+console.log(filter)
+
+const obj={
+    a:"",
+    b:11,
+    c:22,
+    d:"",
+    e:9
+}
+const array = Object.values(obj).filter((item)=>item!=="")
+console.log(array)
+
+</script>
+</html>
