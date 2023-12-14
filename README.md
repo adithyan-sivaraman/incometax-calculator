@@ -1,4 +1,4 @@
-# Order Management for Service Orders
+# Income tax calculator for individuals
 
 This Vite app is designed to calculate income tax for individuals as per income tax act , 1961
 
