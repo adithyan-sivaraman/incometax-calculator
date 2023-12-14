@@ -1,8 +1,22 @@
-# React + Vite
+# Order Management for Service Orders
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Vite app is designed to calculate income tax for individuals as per income tax act , 1961
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository to your local machine:
+
+2. Navigate to the project directory:
+
+3. Install the project dependencies using npm install
+
+## Running the App
+
+1. Start the development server: npm run dev
+
+## Styling
+
+- This Project uses following libraries for user interface
+  1. Tailwind CSS
+  2. Fontawesome Icons
+  3. React Redux
